@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "name": "Web Design",
+      "path": "catalogs/rebuilding.pdf",
+      "image": "images/topics/undraw_Remote_design_team_re_urdx.png",
+      "description": "Topic Listing includes home, listing, detail, and contact pages. Feel free to modify this template for your custom websites.",
+      "count": 14
+    },
+    {
+      "name": "Advertising",
+      "path": "catalogs/rebuilding.pdf",
+      "image": "images/topics/undraw_online_ad_re_ol62.png",
+      "description": "Visit TemplateMo website to download free CSS templates.",
+      "count": 30
+    },
+    {
+      "name": "Podcast",
+      "path": "catalogs/rebuilding.pdf",
+      "image": "images/topics/undraw_Podcast_audience_re_4i5q.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "count": 20
+    }
+  ]
+}
