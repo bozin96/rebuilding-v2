@@ -51,10 +51,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 link.href = href.replace("index.html", "");
             } else if (href.startsWith("index.html")) {
                 // Keep "index.html" if redirecting from another page
-                link.href = href;
+                // link.href = href;
+				link.href = href.replace("index.html", "");
             } else {
                 // For other pages, prepend "index.html" for section links
-                link.href = "index.html" + link.getAttribute('href');
+                link.href = link.getAttribute('href');
             }
         });
 });
