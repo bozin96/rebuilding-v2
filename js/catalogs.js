@@ -46,16 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
             if (href.startsWith("#")) {
                 // Same page anchor
                 link.href = href;
-            } else if (currentPage === "index.html") {
-                // On index.html, remove "index.html" from the path
-                link.href = href.replace("index.html", "");
-            } else if (href.startsWith("index.html")) {
-                // Keep "index.html" if redirecting from another page
-                // link.href = href;
-				link.href = href.replace("index.html", "");
+            } else if (currentPage === "pocetna.html") {
+                // On pocetna, remove "pocetna.html" from the path
+                link.href = href.replace("pocetna.html", "");
+            } else if (href.startsWith("pocetna")) {
+                // Keep "pocetna" if redirecting from another page
+                link.href = href;
             } else {
-                // For other pages, prepend "index.html" for section links
-                link.href = link.getAttribute('href');
+                // For other pages, prepend "pocetna" for section links
+                link.href = "pocetna" + link.getAttribute('href');
             }
-        });
+	});
 });
