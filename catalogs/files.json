@@ -3,20 +3,8 @@
     {
       "name": "Rebuilding katalog",
       "path": "catalogs/rebuilding.pdf",
-      "image": "images/topics/undraw_Remote_design_team_re_urdx.png",
+      "image": "catalogs/images/rebuilding.png",
       "description": "Glavni rebuilding katalog sa proizvodima koji su trenutno u ponudi."
-    },
-    {
-      "name": "Dodatni katalog 1",
-      "path": "catalogs/rebuilding.pdf",
-      "image": "images/topics/undraw_online_ad_re_ol62.png",
-      "description": "Dodatni katalog 1 sa novim proizvodima."
-    },
-    {
-      "name": "Dodatni katalog 2",
-      "path": "catalogs/rebuilding.pdf",
-      "image": "images/topics/undraw_Podcast_audience_re_4i5q.png",
-      "description": "Dodatni katalog 2 sa novim proizvodima."
     }
   ]
 }

@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                                 <h5 class="mb-2">${file.name}</h5>
                                 <p class="mb-0">${file.description}</p>
 
-                                <a href="${file.path}" class="btn custom-btn mt-3 mt-lg-4" target="_blank">Download PDF</a>
+                                <a href="${file.path}" class="btn custom-btn mt-3 mt-lg-4" target="_blank">Preuzmi PDF</a>
                             </div>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => {
-            console.error("Error loading file list:", error);
-            container.innerHTML = "<p>Failed to load catalog list.</p>";
+            console.error("Greška pri učitavanju kataloga:", error);
+            container.innerHTML = "<p>Trenutno imamo problem sa učitavanjem kataloga.</p>";
         });
 });
