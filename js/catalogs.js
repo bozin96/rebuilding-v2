@@ -34,27 +34,4 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Greška pri učitavanju kataloga:", error);
             container.innerHTML = "<p>Trenutno imamo problem sa učitavanjem kataloga.</p>";
         });
-		
-	// handling navigation
-	// const navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
-        // const currentPath = window.location.pathname;
-        // const currentPage = currentPath.substring(currentPath.lastIndexOf('/') + 1);
-        
-        // navbarLinks.forEach(link => {
-            // const href = link.getAttribute('href');
-
-            // if (href.startsWith("#")) {
-                // // Same page anchor
-                // link.href = href;
-            // } else if (currentPage === "pocetna.html") {
-                // // On pocetna, remove "pocetna.html" from the path
-                // link.href = href.replace("pocetna.html", "");
-            // } else if (href.startsWith("pocetna")) {
-                // // Keep "pocetna" if redirecting from another page
-                // link.href = href;
-            // } else {
-                // // For other pages, prepend "pocetna" for section links
-                // link.href = "pocetna" + link.getAttribute('href');
-            // }
-	// });
 });
