@@ -1,25 +1,22 @@
 {
   "files": [
     {
-      "name": "Web Design",
+      "name": "Rebuilding katalog",
       "path": "catalogs/rebuilding.pdf",
       "image": "images/topics/undraw_Remote_design_team_re_urdx.png",
-      "description": "Topic Listing includes home, listing, detail, and contact pages. Feel free to modify this template for your custom websites.",
-      "count": 14
+      "description": "Glavni rebuilding katalog sa proizvodima koji su trenutno u ponudi."
     },
     {
-      "name": "Advertising",
+      "name": "Dodatni katalog 1",
       "path": "catalogs/rebuilding.pdf",
       "image": "images/topics/undraw_online_ad_re_ol62.png",
-      "description": "Visit TemplateMo website to download free CSS templates.",
-      "count": 30
+      "description": "Dodatni katalog 1 sa novim proizvodima."
     },
     {
-      "name": "Podcast",
+      "name": "Dodatni katalog 2",
       "path": "catalogs/rebuilding.pdf",
       "image": "images/topics/undraw_Podcast_audience_re_4i5q.png",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "count": 20
+      "description": "Dodatni katalog 2 sa novim proizvodima."
     }
   ]
 }

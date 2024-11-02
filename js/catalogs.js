@@ -24,7 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 <a href="${file.path}" class="btn custom-btn mt-3 mt-lg-4" target="_blank">Download PDF</a>
                             </div>
-                            <span class="badge bg-primary rounded-pill ms-auto">${file.count}</span>
                         </div>
                     </div>
                 `;
