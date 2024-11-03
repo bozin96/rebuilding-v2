@@ -34,10 +34,9 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Greška pri učitavanju kataloga:", error);
             container.innerHTML = "<p>Trenutno imamo problem sa učitavanjem kataloga.</p>";
         });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Check if we're on the news page
+	
+	// Routing handling
+	// Check if we're on the news page
     if (document.body.id === "news-page") {
         document.querySelectorAll("a.click-scroll").forEach((link) => {
             link.addEventListener("click", function (event) {
