@@ -35,3 +35,30 @@ document.addEventListener("DOMContentLoaded", function () {
             container.innerHTML = "<p>Trenutno imamo problem sa učitavanjem kataloga.</p>";
         });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Check if we're on the news page
+    if (document.body.id === "news-page") {
+        document.querySelectorAll("a.click-scroll").forEach((link) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetAnchor = link.getAttribute("href");
+
+                // Redirect to index.html, then update the URL hash
+                window.location.href = "index.html" + targetAnchor;
+            });
+        });
+    }
+
+    // Handle URL cleaning when on the home page
+    if (document.body.id === "home-page") {
+        // Clean the URL by removing 'index.html' if it exists in the hash
+        if (window.location.href.includes("index.html#")) {
+            history.replaceState(
+                null,
+                "",
+                window.location.href.replace("index.html", "")
+            );
+        }
+    }
+});
