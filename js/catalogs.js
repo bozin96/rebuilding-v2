@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Handle URL cleaning when on the home page
     if (document.body.id === "home-page") {
         // Clean the URL by removing 'index.html' if it exists in the hash
-        if (window.location.href.includes("index.html#")) {
+        if (window.location.href.includes("index.html")) {
             history.replaceState(
                 null,
                 "",
