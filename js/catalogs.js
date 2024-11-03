@@ -36,27 +36,25 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 	
 	// Routing handling
-	// Check if we're on the news page
-    if (document.body.id === "news-page") {
+	if (document.body.id === "news-page") {
         document.querySelectorAll("a.click-scroll").forEach((link) => {
             link.addEventListener("click", function (event) {
                 event.preventDefault();
-                const targetAnchor = link.getAttribute("href");
-
-                // Redirect to index.html, then update the URL hash
-                window.location.href = "index.html" + targetAnchor;
+                const targetAnchor = link.getAttribute("href").replace("pocetna", "");
+                
+                // Redirect to pocetna URL with hash
+                window.location.href = "pocetna" + targetAnchor;
             });
         });
     }
 	
     // Handle URL cleaning when on the home page
     if (document.body.id === "home-page") {
-        // Clean the URL by removing 'index.html' if it exists in the hash
-        if (window.location.href.includes("index.html#")) {
+        if (window.location.href.includes("index.html")) {
             history.replaceState(
                 null,
                 "",
-                window.location.href.replace("index.html", "")
+                window.location.href.replace("index.html", "pocetna")
             );
         }
     }
